@@ -20,53 +20,53 @@ const navItems = {
 function Logo() {
   return (
     <Link aria-label="Primal Bound" href="/" className="mt-[-10px]">
-    <motion.svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 800 600"
-      className="text-black dark:text-white h-[50px] md:h-[75px]"
-    >
-      <motion.text
-        x="25%"
-        y="50%"
-        fill="#FFA500"
-        fontSize="400"
-        fontWeight="bold"
-        fontFamily="Lato, sans-serif"
-        textAnchor="middle"
-        dominantBaseline="middle"
-        initial={{ opacity: 0, x: -300 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
+      <motion.svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 800 600"
+        className="text-black dark:text-white h-[50px] md:h-[75px]"
       >
-        p
-      </motion.text>
-      <motion.text
-        x="55%"
-        y="50%"
-        fill="#FFA500"
-        fontSize="400"
-        fontWeight="bold"
-        fontFamily="Lato, sans-serif" 
-        textAnchor="middle"
-        dominantBaseline="middle"
-        initial={{ opacity: 0, x: 300 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
-      >
-        b
-      </motion.text>
-      <motion.circle
-        cx="38%"
-        cy="50%"
-        r="280"
-        stroke="#FFA500"
-        strokeWidth="10"
-        fill="none"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1 }}
-      />
-    </motion.svg>
+        <motion.text
+          x="25%"
+          y="50%"
+          fill="currentColor" // Use "currentColor" to inherit the text color from the parent
+          fontSize="400"
+          fontWeight="bold"
+          fontFamily="Lato, sans-serif"
+          textAnchor="middle"
+          dominantBaseline="middle"
+          initial={{ opacity: 0, x: -300 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+        >
+          p
+        </motion.text>
+        <motion.text
+          x="55%"
+          y="50%"
+          fill="currentColor" // Use "currentColor" to inherit the text color from the parent
+          fontSize="400"
+          fontWeight="bold"
+          fontFamily="Lato, sans-serif"
+          textAnchor="middle"
+          dominantBaseline="middle"
+          initial={{ opacity: 0, x: 300 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+        >
+          b
+        </motion.text>
+        <motion.circle
+          cx="37%"
+          cy="50%"
+          r="280"
+          stroke="#FFA500"
+          strokeWidth="10"
+          fill="none"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1 }}
+        />
+      </motion.svg>
     </Link>
   );
 }
