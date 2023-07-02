@@ -30,10 +30,24 @@ export async function generateMetadata({
     return {}
   }
 
+  const {
+    title,
+    description,
+    date,
+    slug,
+  } = post;
+
   return {
-    title: post.title,
-    description: post.description,
-  }
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      type: 'article',
+      publishedTime: date,
+      url: `https://primalbound.com/posts/${slug}`
+    }
+  };
 }
 
 export async function generateStaticParams(): Promise<PostProps["params"][]> {

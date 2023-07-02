@@ -1,5 +1,12 @@
 import { allPosts } from "@/.contentlayer/generated"
 import Link from "next/link"
+import type { Metadata } from 'next';
+
+
+export const metadata: Metadata = {
+  title: 'Blog',
+  description: 'Welcome to Primal Bound, a blog that takes you on a journey into the tapestry of daily life, exploring the primal instincts that shape our existence.',
+};
 
 export default function Posts() {
   return (
