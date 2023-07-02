@@ -71,6 +71,7 @@ export default async function PostPage({ params }: PostProps) {
           {post.description}
         </p>
       )}
+      Posted at: <span className="mb-2">{post.date.split('T')[0]}</span>
       <hr className="my-2" />
       <Mdx code={post.body.code} />
       <hr className="my-2" />
